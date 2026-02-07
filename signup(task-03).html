@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #eef4fb;   /* same light blue */
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      max-width: 360px;
+      margin: 60px auto 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-weight: normal;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #7fb3d5;   /* soft blue (signup) */
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+   <img src="klh.jpeg" alt="klh logo" width="50" height="40" align="right">
+  <div class="card">
+    
+    <h2>Signup</h2>
+   
+    <form action="AuthServlet" method="post">
+      <input type="hidden" name="action" value="signup">
+      <input type="Text" name="Name" placeholder="Name" required>
+      <input type="email" name="Email Id" placeholder="Email Id" required>
+      <input type="text" name="Username" placeholder="Username" required>
+      <input type="password" name="Password" placeholder="Password" required>
+      
+      
+      <input type="text" name="Mobile Number" placeholder="Mobile Number" required>
+      <input type="date" name="DOB" placeholder="DOB" required>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
